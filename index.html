@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="pagewrap">
+        <nav class="navigation container">
+            <div class="nav-items">
+                <div class="nav-repo">
+                    <a href="https://github.com/dev-enforced/cash-register-ncm10" target="_blank" class="nav-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </div>
+                <h1 class="nav-title">PERSONAL CASH REGISTER 💰</h1>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            <div class="main-intro">
+                <h3>This cash register takes the bill amount and cash paid and returns the amount and minimum number of
+                    notes to be returned.<br>Available currencies: 1,5,10,20,100,500,2000.</h3>
+            </div>
+            <div class="main-body">
+                <div class="bill-div">
+                    <label for="bill-input">
+                        BILL AMOUNT:
+                    </label>
+                    <input type="number" id="bill-input" placeholder="Enter the bill Amount:">
+                    <button id="bill-verify">NEXT</button>
+                </div>
+                <div class="cash-div">
+                    <label for="cash-input">
+                        CASH AMOUNT:
+                    </label>
+                    <input type="number" id="cash-input" placeholder="Enter the cash Amount:">
+                    <button id="cash-verify">CHECK</button>
+                    
+                </div>
+            </div>
+            <div class="main-message">
+                <p id="output-short">Here the error message or amount of change to be returned will be displayed</p>
+            </div>
+            <div class="main-output">
+                <table>
+                    <tr>
+                        <th>Note Value</th>
+                        <th>Note quantity</th>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>100</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="note-quantity"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-tagline">
+                <h2>Made with love by Dev-Enforced.Available on:</h2>
+            </div>
+            <ul class="footer-socials">
+                <li class="footer-inline">
+                    <a class="footer-links" rel="noopener noreferrer" href="https://github.com/dev-enforced">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                </li>
+                <li class="footer-inline">
+                    <a class="footer-links" target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/devenforced">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
